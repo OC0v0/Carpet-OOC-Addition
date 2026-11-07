@@ -4,6 +4,7 @@
   "version": "${version}",
   "name": "Carpet OOC Addition",
   "description": "A fabric-carpet extension: trade locks for fletchers/librarians and configurable drops for headless pistons.",
+  "icon": "assets/carpet-ooc-addition/icon.png",
   "authors": [
     "OClock0v0"
   ],
