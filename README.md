@@ -4,6 +4,8 @@
 [![issues](https://img.shields.io/github/issues/OC0v0/Carpet-OOC-Addition?style=flat-square)](https://github.com/OC0v0/Carpet-OOC-Addition/issues)
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.11-orange?style=flat-square)
 
+**中文** | [English](README_en_us.md)
+
 这是一个 [Carpet mod](https://github.com/gnembon/fabric-carpet) 扩展，面向 OOC玩法：调整交易、掉落、合成与方块交互行为，让一些平时无法实现的操作变得可行。
 
 ## 文档
