@@ -13,6 +13,13 @@ repositories {
     mavenCentral()
 }
 
+def carpetJar = file("libs/fabric-carpet-1.21.11-1.4.194+v251223.jar")
+if (!carpetJar.exists()) {
+    throw new GradleException(
+            "Missing ${carpetJar.name}. Download the Carpet 1.4.194 jar for Minecraft 1.21.11 " +
+            "and put it into libs/ (see libs/README.md); it is only used to compile against Carpet's API.")
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings loom.officialMojangMappings()

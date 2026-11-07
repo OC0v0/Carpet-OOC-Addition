@@ -7,3 +7,7 @@ out/
 .vscode/
 *.log
 hs_err_pid*
+
+# local-only: handoff notes and the Carpet jar used for compilation
+ADDING_RULES.md
+libs/*.jar
