@@ -11,13 +11,10 @@ base {
 
 repositories {
     mavenCentral()
-}
-
-def carpetJar = file("libs/fabric-carpet-1.21.11-1.4.194+v251223.jar")
-if (!carpetJar.exists()) {
-    throw new GradleException(
-            "Missing ${carpetJar.name}. Download the Carpet 1.4.194 jar for Minecraft 1.21.11 " +
-            "and put it into libs/ (see libs/README.md); it is only used to compile against Carpet's API.")
+    // Carpet (https://github.com/gnembon/fabric-carpet) is published to Modrinth's public Maven.
+    maven {
+        url = uri("https://api.modrinth.com/maven")
+    }
 }
 
 dependencies {
@@ -26,7 +23,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     // Carpet is provided by the server at runtime; only needed to compile against its extension API.
-    modCompileOnly files("libs/fabric-carpet-1.21.11-1.4.194+v251223.jar")
+    modCompileOnly "maven.modrinth:carpet:${project.carpet_version}"
     // Client-only: built-in resource pack registration (resource loader API) and the beacon label mixin.
     modImplementation "net.fabricmc.fabric-api:fabric-api:0.141.6+1.21.11"
 }
