@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "carpetoocaddition.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AbstractHugeMushroomFeatureMixin",
+    "AxeItemMixin",
+    "BeaconBlockEntityMixin",
+    "BlockEntityTypeMixin",
+    "CatSpawnerMixin",
+    "EntityGossipsMixin",
+    "GossipContainerMixin",
+    "MerchantMixin",
+    "PistonBaseBlockMixin",
+    "SmithingMenuMixin",
+    "VillagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

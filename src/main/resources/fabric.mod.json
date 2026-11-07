@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "carpet-ooc-addition",
+  "version": "${version}",
+  "name": "Carpet OOC Addition",
+  "description": "A fabric-carpet extension: trade locks for fletchers/librarians and configurable drops for headless pistons.",
+  "authors": [
+    "DSH"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "carpetoocaddition.CarpetOOCAdditionMod"
+    ],
+    "client": [
+      "carpetoocaddition.client.OocClientInit"
+    ]
+  },
+  "mixins": [
+    "carpet-ooc-addition.mixins.json",
+    {
+      "config": "carpet-ooc-addition.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "carpet": ">=1.4.193",
+    "fabric-api": ">=0.141.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  },
+  "custom": {
+    "modmenu:parent": "carpet"
+  }
+}

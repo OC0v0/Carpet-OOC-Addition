@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "carpetoocaddition.client.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BeaconPowerButtonMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
